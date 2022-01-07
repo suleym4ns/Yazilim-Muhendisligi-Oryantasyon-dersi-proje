@@ -1,0 +1,60 @@
+package javaapplication5;
+//RANDOM ŞEKİLDE ÜRETİLEN DİZİ ELEMANLARINI YAZDIRIP KÜÇÜK BÜYÜK  BULMA
+import java.util.*;
+public class KarisikDizi{
+	public static void main(String[] args) {
+		
+		System.out.println("Kaç Rastgele sayi tutulsun ?  ");
+		Scanner s = new Scanner(System.in);
+		int sayi = s.nextInt();
+		
+		int dizi[] = new int[sayi];
+		
+		Random r = new Random();
+      
+		for (int i=0;i<dizi.length;i++){
+			dizi[i]=r.nextInt(100);
+		}
+		
+		yazdir(dizi);
+		kucukbul(dizi);
+		buyukbul(dizi);
+		
+		
+	}
+	public static void yazdir(int dizi[]){
+		for (int i=0;i<dizi.length;i++){
+			System.out.println("Dizinin "+(i+1)+". elemanı = "+dizi[i]);
+		}
+	}
+	
+		
+	
+	public static void kucukbul(int dizi[]){
+		int enk;
+		enk = dizi[0];
+		
+		for (int i=1;i<dizi.length;i++){
+			if (dizi[i]<enk)
+				enk =dizi[i];
+		}
+		
+		System.out.println("Dizinin en kucuk elemani = "+enk);
+	}
+	
+	public static void buyukbul(int dizi[]){
+		int enb;
+		enb =dizi[0];
+		
+		for (int i=1;i<dizi.length;i++){
+			if (dizi[i]>enb)
+				enb =dizi[i];
+		}
+		
+		System.out.println("Dizinin en buyuk elemani = "+enb);
+	}
+	
+	
+	
+	
+}
