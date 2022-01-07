@@ -1,0 +1,28 @@
+
+package javaapplication14;
+//KULLANICININ GİRDİĞİ SAYIYI 1 E KADAR YAZIP SONRA TEKRAR GİRİLEN SAYIYA KADAR YAZDIRMA
+import java.util.Scanner;
+
+public class JavaApplication14 {
+
+        public static void main(String args[])
+    {
+        System.out.println("Sayı giriniz? ");
+        Scanner scan = new Scanner(System.in);
+        int sira = scan.nextInt();
+ 
+        for (int i = sira; i>=1; i--)
+        {
+            for (int j=i; j>=1; j--)
+            {
+                System.out.print(j+" ");
+            }
+            for (int k=2; k<=i; k++)
+            {
+                System.out.print(k+" ");
+            }
+            System.out.println("");
+        }
+    }
+    
+}
