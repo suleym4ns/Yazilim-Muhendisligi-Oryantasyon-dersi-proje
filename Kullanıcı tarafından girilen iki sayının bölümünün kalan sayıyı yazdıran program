@@ -1,0 +1,26 @@
+
+package javaapplication15;
+
+import java.util.Scanner;
+//Kullanıcı tarafından girilen iki sayının bölümünün kalan sayıyı yazdıran program
+
+public class JavaApplication15 {
+
+    
+    
+    public static void main(String[] args) {
+        Scanner reader = new Scanner(System.in);
+        System.out.print("Birinci Sayıyı Girin: ");         
+        int sayi = reader.nextInt();
+        System.out.print("İkinci Sayıyı Girin: ");   
+        int bolen = reader.nextInt();
+ 
+        int bolum = sayi / bolen;
+        int kalan = sayi % bolen;
+ 
+        System.out.println("İşlem:"+sayi+"/"+bolen);
+        System.out.println("Bölüm = " + bolum);
+        System.out.println("Kalan = " + kalan);
+    }
+    
+}
