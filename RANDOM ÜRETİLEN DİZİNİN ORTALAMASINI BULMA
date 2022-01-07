@@ -1,0 +1,36 @@
+
+package javaapplication6;
+
+import java.util.Random;
+
+// RANDOM ÜRETİLEN DİZİNİN ORTALAMASINI BULMA
+
+public class JavaApplication6 {
+    public static double ortalama (int[] dizi){
+    
+    double toplam =0;
+    for(int i=0;i<100;i++){
+    
+        toplam +=dizi[i];
+
+}
+    return toplam/100;
+}
+
+    public static void main(String[] args) {
+       
+       int sayilar[] = new int[100];
+       Random rand = new Random();
+       for (int i=0;i<100;i++){
+       
+           int sayi = rand.nextInt(1000);
+           sayilar[i] =sayi;
+       
+       }
+        
+       double ort = ortalama(sayilar); 
+       System.out.println("Ortalama : "+ort);
+       
+    }
+    
+}
