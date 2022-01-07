@@ -1,0 +1,28 @@
+
+package javaapplication7;
+
+import java.util.Random;
+
+
+public class JavaApplication7 {
+//RANDOM ÜRETİLEN DİZİNİN ELEMANLARINI YAZDIRIP TEK YA DA ÇİFT Mİ OLDUĞUNU GÖSTEREN PROGRAM
+    public static void main(String[] args) {
+       
+       int sayilar[] = new int[100];
+       Random rand = new Random();
+       for (int i=0;i<100;i++){
+       
+           int sayi = rand.nextInt(1000);
+           sayilar[i] =sayi;
+        if(sayilar[i]%2==0)
+        {System.out.println("Dizinin "+(i+1)+". elamanı Çifttir ve sayı = "+sayilar[i]);}
+        else 
+       {System.out.println("Dizinin "+(i+1)+". elamanı Tektir ve sayı = "+sayilar[i]);}
+       }
+       
+       
+       
+       
+    }
+    
+}
