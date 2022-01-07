@@ -1,0 +1,31 @@
+
+package javaapplication13;
+
+//geçici değişken (temp) kullanarak iki float değişken içindeki değerlerin yerini değiştireceğiz.
+public class JavaApplication13 {
+
+    
+    public static void main(String[] args) {
+        
+        float sayi1 =  1.20f, sayi2 =  2.45f;
+ 
+        System.out.println("--Değiiklik Öncesi--");
+        System.out.println("1.Sayı = " + sayi1);
+        System.out.println("2.Sayı = " + sayi2);
+ 
+        
+        float temp = sayi1;
+ 
+        
+        sayi1 = sayi2;
+ 
+        
+        sayi2 = temp;
+ 
+        System.out.println("\n\n--Değişiklik Sonrası--");
+        System.out.println("1.Sayı = " + sayi1);
+        System.out.println("2.Sayı = " + sayi2);
+    } 
+    }
+    
+
